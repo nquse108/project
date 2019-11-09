@@ -1,3 +1,18 @@
+const Koa = require('koa')
+const app = module.exports = new Koa()
+
+app.use(async function (ctx) {
+
+})
+if (!module.parent) {
+	app.listen(3000)
+	console.log('server run at http://localhost:3000/')
+  }
+
+
+function layout (path, html) {
+	return `
+
 <html>
 <head>
 <meta charset="UTF-8">
@@ -92,3 +107,5 @@ body{margin:0; border:0}
 </div>
 </body>
 </html>
+`
+}
