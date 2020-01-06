@@ -9,8 +9,7 @@ describe( 'app', function() {
     describe('LogIn', function() {
     it('should Login account and redirect to /', function(done) {
         request
-        
-        
+        .get('/html')
         if (err) return done(err);
         res.header.location.should.be.equal('/');
         done();
