@@ -6,8 +6,8 @@ describe( 'app', function() {
     after(function() {
         server.close();
 
-    describe('SignIn /SignIn', function() {
-    it('should redirect to / and create an account', function(done) {
+    describe('/SignIn', function() {
+    it('should redirect to /SignIn and create an account', function(done) {
         request
         .SignIn('./SignIn')
 
